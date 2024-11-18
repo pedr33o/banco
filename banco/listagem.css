@@ -1,0 +1,123 @@
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+  }
+  
+  header {
+    background-color: #111;
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  header .logo {
+    color: #e50914;
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin: 0 1rem;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+  }
+  
+  main {
+    padding: 2rem;
+    background-color: #fff;
+  }
+  
+  .listagem-filmes {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  h1 {
+    font-size: 2rem;
+    color: #333;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 2rem;
+  }
+  
+  .filme {
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .filme img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .filme h2 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-top: 1rem;
+  }
+  
+  .filme p {
+    color: #666;
+    font-size: 1rem;
+  }
+  
+  .botao {
+    display: inline-block;
+    background-color: #e50914;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 1rem;
+  }
+  
+  .botao:hover {
+    background-color: #b4060a;
+  }
+  .voltar {
+    text-align: center;
+    margin-top: 2rem;
+  }
+  
+  .botao-voltar {
+    background-color: #ccc;
+    color: #333;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  
+  .botao-voltar:hover {
+    background-color: #999;
+  }
+  footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #111;
+    color: #fff;
+  }
+  

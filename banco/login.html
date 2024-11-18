@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Cinema</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="login-box">
+        <h1>Cinema Login</h1>
+        
+        <!-- Formulário com redirecionamento -->
+        <form action="index.html" method="GET">
+            <div class="campo">
+                <label for="username">Usuário</label>
+                <input type="text" id="username" name="username" placeholder="Digite seu usuário" required>
+            </div>
+            
+            <div class="campo">
+                <label for="password">Senha</label>
+                <input type="password" id="password" name="password" placeholder="Digite sua senha" required>
+            </div>
+            
+            <!-- Botão que submete o formulário -->
+            <button type="submit">Entrar</button>
+        </form>
+    </div>
+
+    <script>
+        const form = document.getElementById('loginForm');
+
+        form.addEventListener('submit', function(event) {
+            event.preventDefault(); // Evita o envio padrão do formulário
+
+            const username = document.getElementById('username').value.trim();
+            const password = document.getElementById('password').value.trim();
+
+            if (username === 'admin' && password === '1234') {
+                // Redireciona para o dashboard
+                window.location.href = 'dashboard.html';
+            } else {
+                // Exibe mensagem de erro
+                alert('Usuário ou senha inválidos!');
+            }
+        });
+    </script>
+</body>
+</html>

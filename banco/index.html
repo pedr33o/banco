@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cinevibe</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Barra de Navegação Superior -->
+  <header class="topo">
+    <div class="logo">Cine<strong>Vibe</strong></div>
+    <div class="localizacao">📍 GRAVATAÍ/RS</div>
+    <nav class="menu">
+        <ul>
+            <li><a href="#filmes">Filmes</a></li> <!-- Link para a seção de filmes na mesma página -->
+            <li><a href="#lancamentos">Filmes em Lançamentos</a></li> <!-- Link para a seção de lançamentos na mesma página -->
+            <li><a href="login.html">Login</a></li> <!-- Página de login -->
+            <li><a href="cadastro.html">Cadastro de Filme</a></li> <!-- Página de cadastro de filme -->
+            <li><a href="listagem.html">Listagem de Filme</a></li> <!-- Página de listagem de filmes -->
+            <li><a href="cadastroadm.html">Cadastrar-se</a></li> 
+          </ul>
+    </nav>
+  </header>
+
+  <!-- Carrossel de Destaques -->
+  <section class="carrossel-destaque">
+    <div class="carrossel-container">
+      <!-- Item 1 -->
+      <div class="carrossel-item">
+        <img src="img/gladiador.jpg" alt="Gladiador 2" class="fundo-destaque">
+        <div class="conteudo-destaque">
+          <h1>GLADIADOR II</h1>
+          <p>HOJE NOS CINEMAS</p>
+          <a href="#" class="botao">GARANTA SEU INGRESSO</a>
+        </div>
+      </div>
+  
+      <!-- Item 2 -->
+      <div class="carrossel-item">
+        <img src="img/moana.jpg" alt="Jurassic World" class="fundo-destaque">
+        <div class="conteudo-destaque">
+          <h1>JURASSIC WORLD</h1>
+          <p>EM BREVE NOS CINEMAS</p>
+          <a href="#" class="botao">GARANTA SEU INGRESSO</a>
+        </div>
+      </div>
+  
+      <!-- Item 3 -->
+      <div class="carrossel-item">
+        <img src="img/operacao-natal.jpg" alt="Spider-Man" class="fundo-destaque">
+        <div class="conteudo-destaque">
+          <h1>SPIDER-MAN</h1>
+          <p>AGORA NOS CINEMAS</p>
+          <a href="#" class="botao">GARANTA SEU INGRESSO</a>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Botões de navegação -->
+    <button class="seta seta-esquerda">◀</button>
+    <button class="seta seta-direita">▶</button>
+  </section>
+
+  <!-- Carrossel Unificado -->
+  <!-- Seção Filmes -->
+  <section  id="filmes"    class="filmes">
+    <H1>Filme em Cartaz</H1>
+    <div class="grid">
+        
+      <div class="filme">
+        <img src="img/arca.jpg" alt="Promoção Robô Selvagem">
+        <div class="info">
+          <h2>Arca de Noe</h2>
+         
+        </div>
+      </div>
+      <div class="filme">
+        <img src="img/coisa.jpg" alt="Promoção Pipoca">
+        <div class="info">
+          <h2>Terrifier 3</h2>
+        
+        </div>
+      </div>
+      <div class="filme">
+        <img src="img/tempo.jpg" alt="Promoção Pipoca">
+        <div class="info">
+          <h2>Todo tempo que temos</h2>
+         
+        </div>
+      </div>
+      <div class="filme">
+        <img src="img/robo.jpg" alt="Promoção Pipoca">
+        <div class="info">
+          <h2>Robo Selvagem
+          </h2>
+        
+        </div>
+      </div>
+      <div class="filme">
+        <img src="img/ope.jpg" alt="Promoção Pipoca">
+        <div class="info">
+          <h2>Operação Natal</h2>
+   
+        </div>
+      </div>
+      <div class="filme">
+        <img src="img/moa.jpg" alt="Promoção Pipoca">
+        <div class="info">
+          <h2>Promoção Pipoca</h2>
+          
+        </div>
+      </div>
+      <!-- Adicione mais filmes aqui, se necessário -->
+    </div>
+  </section>
+  
+
+  <!-- Filmes -->
+  <main>
+    <section  id="Lançamento"    class="filmes">
+      <h2>Proximos laçamentos</h2>
+      <div class="grid">
+        <div class="filme">
+          <img src="img/mufasa.jpg" alt="A Cavaleira">
+          <p>Mufasa</p>
+        </div>
+        <div class="filme">
+          <img src="img/ameaça.jpg" alt="A Abelha e o Urso">
+          <p>Ameaça no Ar</p>
+        </div>
+        <div class="filme">
+            <img src="img/caçador.jpg" alt="A Abelha e o Urso">
+            <p>Kraven o caçador</p>
+          </div>
+          <div class="filme">
+            <img src="img/linha.jpg" alt="A Abelha e o Urso">
+            <p>A linha da Extiçao</p>
+          </div>
+          <div class="filme">
+            <img src="img/nao.jpg" alt="A Abelha e o Urso">
+            <p>A Redenção</p>
+          </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <!-- Logo e Informações -->
+      <div class="footer-logo">
+        <div class="logo">Cine<strong>vibe</strong> </div>
+        <p>O melhor cinema da sua cidade!</p>
+      </div>
+  
+      <!-- Links de Navegação -->
+      <div class="footer-links">
+        <h3>Links Rápidos</h3>
+        <ul>
+          <li><a href="#">Filmes</a></li>
+          <li><a href="#">Filmes em laçamentos</a></li>
+         
+        </ul>
+      </div>
+  
+      <!-- Contatos -->
+      <div class="footer-contato">
+        <h3>Contatos</h3>
+        <p><strong>Email:</strong> contato@Cinevibe.com.br</p>
+        <p><strong>Telefone:</strong> (51) 1234-5678</p>
+        <p><strong>Endereço:</strong> Av. Central, 123 - Gravataí/RS</p>
+      </div>
+  
+      <!-- Redes Sociais -->
+      <div class="footer-social">
+        <h3>Siga-nos</h3>
+        <a href="#" class="social-icon">Facebook</a>
+        <a href="#" class="social-icon">Instagram</a>
+        <a href="#" class="social-icon">Twitter</a>
+        <a href="#" class="social-icon">YouTube</a>
+      </div>
+    </div>
+  
+    <div class="footer-bottom">
+      <p>&copy; 2024 Cinevibe Cinemas. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+  
+
+  <script src="scripts.js"></script>
+</body>
+</html>

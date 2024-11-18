@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastrar Filme - ArcoPlex Cinemas</title>
+  <link rel="stylesheet" href="cadastro.css">
+  <script>
+    // Função para exibir a mensagem de sucesso e limpar o formulário
+    function cadastrarFilme(event) {
+      event.preventDefault(); // Evita que o formulário seja enviado
+
+      // Captura os dados do formulário
+      const titulo = document.getElementById('titulo').value;
+      const descricao = document.getElementById('descricao').value;
+      const dataLancamento = document.getElementById('data-lancamento').value;
+      const trailer = document.getElementById('trailer').value;
+
+      // Exibe a mensagem de sucesso
+      alert('Filme "' + titulo + '" cadastrado com sucesso!');
+
+      // Limpa os campos do formulário
+      document.getElementById('titulo').value = '';
+      document.getElementById('descricao').value = '';
+      document.getElementById('data-lancamento').value = '';
+      document.getElementById('trailer').value = '';
+    }
+  </script>
+</head>
+<body>
+  <!-- Barra de Navegação -->
+  <header>
+    <div class="logo">Cine<strong>Cine</strong></div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="filmes.html">Filmes</a></li>
+        <li><a href="listagem.html">Listagem de Filme</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Formulário de Cadastro de Filme -->
+  <main>
+    <section class="formulario-cadastro">
+      <h1>Cadastrar Novo Filme</h1>
+      <form onsubmit="cadastrarFilme(event)">
+        <div class="campo">
+          <label for="titulo">Título do Filme:</label>
+          <input type="text" id="titulo" name="titulo" required>
+        </div>
+
+        <div class="campo">
+          <label for="descricao">Descrição:</label>
+          <textarea id="descricao" name="descricao" rows="4" required></textarea>
+        </div>
+
+        <div class="campo">
+          <label for="data-lancamento">Data de Lançamento:</label>
+          <input type="date" id="data-lancamento" name="data_lancamento" required>
+        </div>
+
+        <div class="campo">
+          <label for="trailer">Link do Trailer:</label>
+          <input type="url" id="trailer" name="trailer" placeholder="https://www.youtube.com/watch?v=..." required>
+        </div>
+
+        <button type="submit" class="botao">Cadastrar Filme</button>
+      </form>
+      <div class="voltar">
+        <button onclick="window.location.href='index.html';" class="botao-voltar">Voltar</button>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Cinevibe Cinemas. Todos os direitos reservados.</p>
+  </footer>
+</body>
+</html>

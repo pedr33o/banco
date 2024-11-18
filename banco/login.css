@@ -1,0 +1,113 @@
+/* Estilo geral do corpo */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #1c1c1c, #000000); /* Fundo com gradiente escuro */
+    color: #fff;
+}
+
+/* Estilo da caixa de login */
+.login-box {
+    background-color: rgba(20, 20, 20, 0.95); /* Fundo levemente translúcido */
+    padding: 40px;
+    border-radius: 10px;
+    width: 350px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.7); /* Sombra para destaque */
+    text-align: center;
+}
+
+/* Estilo do título */
+.login-box h1 {
+    font-size: 28px;
+    color: #e50914; /* Vermelho vibrante para cinema */
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+/* Estilo dos campos do formulário */
+.login-box .campo {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.login-box .campo label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #ddd; /* Cinza claro */
+}
+
+.login-box .campo input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #444; /* Bordas sutis */
+    border-radius: 5px;
+    font-size: 14px;
+    background-color: #222; /* Fundo escuro */
+    color: #fff; /* Texto branco */
+}
+
+.login-box .campo input::placeholder {
+    color: #777; /* Placeholder com contraste */
+}
+
+/* Estilo do botão */
+.login-box button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #e50914; /* Vermelho Netflix */
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.login-box button:hover {
+    background-color: #ff3f34; /* Vermelho mais claro ao passar o mouse */
+    transform: scale(1.05); /* Leve zoom */
+}
+
+/* Links do formulário */
+.login-box a {
+    display: block;
+    margin-top: 15px;
+    font-size: 14px;
+    color: #ccc; /* Link discreto */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.login-box a:hover {
+    color: #fff; /* Realce ao passar o mouse */
+}
+
+/* Responsividade */
+@media (max-width: 480px) {
+    .login-box {
+        width: 90%;
+        padding: 20px;
+    }
+}
+a button {
+    background-color: dodgerblue;
+    border: none;
+    padding: 15px;
+    width: 100%;
+    border-radius: 10px;
+    color: white;
+    font-size: 15px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a button:hover {
+    background-color: deepskyblue;
+}

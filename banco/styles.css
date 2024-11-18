@@ -1,0 +1,257 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    color: #fff;
+  }
+  
+  .topo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #111;
+    padding: 0.5rem 2rem;
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+    color: #e50914;
+    font-weight: bold;
+  }
+  
+  .localizacao {
+    font-size: 0.9rem;
+  }
+  
+  .menu ul {
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+  }
+  
+  .menu a {
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  .destaque {
+    position: relative;
+    text-align: center;
+  }
+  
+  .fundo-destaque {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    opacity: 0.6;
+  }
+  
+  .conteudo-destaque {
+    position: absolute;
+    top: 20%;
+    left: 10%;
+  }
+  
+  .botao {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #e50914;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+ /* Seção Filmes */
+.filmes {
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  /* Grid para alinhar os filmes lado a lado */
+  .filmes .grid {
+    display: flex;
+    gap: 2rem; /* Espaço entre os filmes */
+    justify-content: center; /* Centraliza os filmes */
+    flex-wrap: wrap; /* Permite que os filmes quebrem a linha, se necessário */
+  }
+  
+  /* Estilo dos itens de filmes */
+  .filmes .filme {
+    width: 200px; /* Define a largura de cada filme */
+    text-align: center;
+    border-radius: 10px; /* Bordas arredondadas */
+    overflow: hidden; /* Para que a borda arredondada seja aplicada à imagem */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra suave */
+  }
+  
+  .filmes .filme img {
+    width: 100%;
+    height: auto;
+    object-fit: cover; /* Faz com que a imagem se ajuste sem distorcer */
+    border-radius: 10px; /* Borda arredondada na imagem também */
+  }
+  
+  .filmes .info {
+    margin-top: 1rem;
+    font-size: 1rem;
+    color: #fff;
+  }
+  
+  .filmes .info h2 {
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  .filmes .info p {
+    margin: 0.5rem 0;
+    font-size: 0.9rem;
+  }
+  
+  /* Carrossel de Destaque */
+.carrossel-destaque {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .carrossel-container {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .carrossel-item {
+    min-width: 100%;
+    position: relative;
+  }
+  
+  .fundo-destaque {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    opacity: 0.6;
+  }
+  
+  .conteudo-destaque {
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    color: #fff;
+  }
+  
+  .botao {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #e50914;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+  .seta {
+    background: none;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #fff;
+    z-index: 1;
+  }
+  
+  .seta-esquerda {
+    left: 10px;
+  }
+  
+  .seta-direita {
+    right: 10px;
+  }
+  
+  .seta:hover {
+    color: #e50914;
+  }
+  /* Estilo do Footer */
+.footer {
+    background-color: #050505;
+    color: #fff;
+    padding: 40px 0;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .footer-logo {
+    flex: 1;
+  }
+  
+  .footer-logo .logo {
+    font-size: 30px;
+    font-weight: bold;
+    color: #e63946;
+  }
+  
+  .footer-logo p {
+    font-size: 16px;
+    margin-top: 10px;
+  }
+  
+  .footer-links, .footer-contato, .footer-social {
+    flex: 1;
+  }
+  
+  .footer-links h3, .footer-contato h3, .footer-social h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .footer-links ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .footer-links ul li {
+    margin-bottom: 8px;
+  }
+  
+  .footer-links ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+  }
+  
+  .footer-links ul li a:hover {
+    color: #e63946;
+  }
+  
+  .footer-contato p {
+    font-size: 16px;
+    margin: 5px 0;
+  }
+  
+  .footer-social a {
+    color: #fff;
+    font-size: 18px;
+    margin-right: 15px;
+    text-decoration: none;
+  }
+  
+  .footer-social a:hover {
+    color: #e63946;
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #aaa;
+  }
+  
